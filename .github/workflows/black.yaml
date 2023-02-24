@@ -26,7 +26,6 @@ jobs:
       - name: Pylint Go
         run: pylint --disable=all $(git ls-files '*.py')
 
-
           
 #   build:
 #     runs-on: ubuntu-latest
