@@ -19,6 +19,12 @@ jobs:
 
       - name: Run Black
         run: black .
+        
+      - name: Run Pylint
+        run: pip install pylint
+        
+      - name: Pylint Go
+        run: pylint --disable=all $(git ls-files '*.py')
 
 
 
